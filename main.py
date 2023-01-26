@@ -212,7 +212,7 @@ def predict(n_clicks, loan_amnt, term, int_rate, grade, home_ownership, annual_i
         print(str(e))
         return html.P('Please input all the values in the form to get the output.')
 
-    return html.P(f'Probability of risk is {proba}',className='mb-0')
+    return html.P(f'Probability of risk is {proba} %',className='mb-0')
 
 if __name__ == '__main__':
     app.run_server()
