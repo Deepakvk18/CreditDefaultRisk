@@ -214,11 +214,5 @@ def predict(n_clicks, loan_amnt, term, int_rate, grade, home_ownership, annual_i
 
     return html.P(f'Probability of risk is {proba}',className='mb-0')
 
-
-
-
-
-
-
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server()
